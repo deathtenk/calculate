@@ -26,8 +26,7 @@ RSpec.describe "item total" do
 
   # lookup float#round
   it "should not round to more then 2 places when doing the calculations" do
-    expect( decimal_size.call(total(items, tax)) ).to <= 2
+    expect( decimal_size.call(total(items, tax)) ).to be <= 2
   end
-
 
 end
